@@ -8,3 +8,7 @@ Result: #ore python progra##ing please
 
 '''
 
+user=input("Tell me what you would like to do today: ")
+symbol=input("What is your favorite symbol on the keyboard? ")
+
+print(user.replace(user[0], symbol))

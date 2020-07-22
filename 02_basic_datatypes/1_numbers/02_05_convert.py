@@ -10,3 +10,17 @@ Demonstrate how to:
     Take note of what information is lost when some conversions take place.
 
 '''
+example= 6
+x= float(example)
+y= int(example)
+print(x)
+print(y)
+
+floor= 6//4.5
+print(floor)
+
+val1=input("Give me a number between 1 and 10: ")
+val2=input("Give me another number between 1 and 10: ")
+val3=int(val1)*int(val2)
+print(val3)
+

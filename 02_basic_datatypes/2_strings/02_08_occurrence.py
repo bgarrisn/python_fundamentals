@@ -7,3 +7,8 @@ Letter input: o
 Result: 4
 
 '''
+userwords=input("type the words hello world: ")
+userletter=input("pick a letter in the words above: ")
+result=userwords.find(userletter)
+
+print(result)
