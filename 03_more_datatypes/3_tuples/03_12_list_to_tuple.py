@@ -2,3 +2,8 @@
 Write a script that takes a list and turns it into a tuple.
 
 '''
+
+list1 = [1, 2, 3, 4]
+tuple1 = tuple(list1)
+
+print(tuple1)

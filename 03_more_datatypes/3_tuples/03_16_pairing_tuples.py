@@ -11,3 +11,12 @@ Note: This lab might be challenging! Make sure to discuss it with your mentor
 or chat about it on our forum.
 
 '''
+# save for Friday
+
+some_list=[1, 2, 3, 4, 5, 6]
+
+for num in some_list:
+    print(num)
+
+for num in range(0,len(some_list), 2):
+    print(tuple(some_list[num: num+2]))
