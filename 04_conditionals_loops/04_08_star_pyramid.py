@@ -17,3 +17,10 @@ Another example: if input is 3, you will output
 Hint: Think of nested for loops
 
 '''
+
+number=input('Give me a number: ')
+
+for num in range(int(number)):
+    for i in range(0, num + 1):
+        print("*" , end="")
+    print("\r")

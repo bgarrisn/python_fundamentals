@@ -22,12 +22,25 @@ result={}
 
 for key in dict_1:
     if key in dict_2:
-        dict_1[key] = dict_2[key] + dict_1[key]
-    for key in dict_1:
-        if key not in dict_2:
-            result.update(dict_2)
+        result[key] = dict_2[key] + dict_1[key]
+    else:
+        result[key]=dict_1[key]
+for key in dict_2:
+    if key not in dict_1:
+        result[key]=dict_2[key]
 
 result.update(dict_1)
 
 print(result)
 
+
+#a={(1, 2):5}
+
+#randlist=['a', 1, 4, 'd', 5, 9, 'e', 'f', 8, 3]
+
+#for i, value in enumerate(randlist):
+    #if value=='d':
+       # print(i)
+       # break
+   # else:
+     #   print("Sorry not here.")

@@ -7,3 +7,16 @@ The output of your calculation should therefore look like this:
 
 The sum is: 5050
 '''
+num1=input("Give me a number: ")
+num2=input("Give me another number: ")
+
+num1=int(num1)
+num2=int(num2)
+
+sumnum=[]
+
+
+for i in range(num1, num2+1):
+    sumnum.append(i)
+
+print("The sum is: " + str(sum(sumnum)))
