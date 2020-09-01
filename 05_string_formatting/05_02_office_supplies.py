@@ -25,3 +25,12 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+
+
+for office_dict in office:
+    full_name=office_dict['full_name']
+    namelist=full_name.split()
+    first_name=namelist[0]
+    last_name=namelist[1]
+    names=last_name.upper() + ','+ ' ' + first_name
+    print(f'{names:<25} \t{office_dict["item"]}')

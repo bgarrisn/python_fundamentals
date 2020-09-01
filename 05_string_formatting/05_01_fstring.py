@@ -18,3 +18,16 @@ famous_quotes = [
     {"full_name": "Nathan Myhrvold", "quote": "Software is a gas; it expands to fill its container."},
     {"full_name": "Alan Bennett", "quote": "Standards are always out of date.  That’s what makes them standards."}
 ]
+
+
+
+for quote_dict in famous_quotes:
+    full_name=quote_dict['full_name']
+    namelist=full_name.split()
+    if len(namelist)==3:
+        first_name=namelist[0] + " " + namelist[1]
+        last_name=namelist[2]
+    else:
+        first_name=namelist[0]
+        last_name=namelist[1]
+    print(f'"{quote_dict["quote"]}" - {last_name}, {first_name}')
